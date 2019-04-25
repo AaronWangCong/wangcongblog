@@ -1,0 +1,116 @@
+.blog-aside{
+  width: 300px;
+  aside{
+    width: 100%;
+    ul li a {
+      display: block;
+      color: #333;
+      .title {
+        width: 84%;
+        float: left
+      }
+      span.count {
+        font-size: 12px;
+        color: #858585;
+        font-weight: 700;
+      }
+      &:hover{
+        color: #ca0c16;
+      }
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      cursor: pointer
+    }
+    .aside-box {
+      margin-bottom: 8px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+      .aside-title {
+        padding: 16px 16px 0;
+        font-size: 14px;
+        color: #333;
+        &::before {
+          display: inline-block;
+          margin-right: 8px;
+          content: '';
+          width: 4px;
+          height: 22px;
+          vertical-align: -6px;
+          background-color: #ca0c16
+        }
+      }
+      .aside-content {
+        padding: 16px;
+        overflow: hidden;
+        max-height: 320px;
+        * {
+          word-wrap: break-word
+        }
+      }
+    }
+    .user-info{
+      .profile-intro {
+        padding: 16px 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e3e3e3;
+        display: flex;
+        align-items: center;
+        .avatar-box img.avatar_pic {
+          display: block;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%
+        }
+      }
+      .data-info{
+        padding: 16px 20px;
+        border-bottom: 1px solid #e3e3e3;
+        display: flex;
+        justify-content: space-between;
+        .text-center{
+          text-align: center;
+        }
+      }
+      .grade-box{
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        dl {
+          margin-top: 8px;
+          width: 50%;
+          display: flex;
+          dt {
+            display: inline-block;
+            dd {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+    .asideHotArticle{
+      .hotArticle-list{
+        li a {
+          display: block;
+          max-height: 50px;
+          overflow: hidden;
+          word-wrap: break-word;
+          font-size: 15px;
+        }
+        li p.read {
+          font-size: 12px;
+          color: #858585;
+          line-height: 20px
+        }
+      }
+    }
+  }
+}
+ 
+
+  
+
+ 

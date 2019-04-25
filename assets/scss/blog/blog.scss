@@ -1,0 +1,29 @@
+.blog-wrap{
+  .bg-title{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      min-width: 1200px;
+    }
+    .w{
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      p{
+        color: #b8b8b8;
+      }
+    }
+  }
+  .w{
+    display: flex;
+    justify-content: space-between;
+  }
+}

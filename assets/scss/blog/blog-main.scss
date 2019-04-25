@@ -1,0 +1,104 @@
+.blog-main {
+ flex: 1;
+ margin-left: 10px;
+ min-width: 900px;
+ .filter-box {
+  padding: 0 24px;
+  height: 48px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  .filter-sort-box {
+   margin-left: auto;
+   display: flex;
+   justify-content: flex-end;
+   dt {
+    margin-right: 8px;
+    color: #999
+   }
+   dd {
+    margin-left: 24px;
+    a {
+     color: #2e2e2e;
+     text-decoration: none;
+     &:hover,
+     &.active {
+      color: #ca0c16
+     }
+    }
+   }
+  }
+ }
+ .article-list {
+  margin-top: 1px;
+  padding: 0;
+  background-color: transparent;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  word-wrap: break-word;
+  .article-item-box {
+   position: relative;
+   margin-bottom: 1px;
+   padding: 12px 24px;
+   background-color: #fff;
+   h4 {
+    margin-bottom: 6px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3d3d3d;
+    display: inline-block;
+    a{
+      text-decoration: none;
+      color: #333;
+      display: inline-block;
+      .article-type{
+        display: inline-block;
+        color: #ca0c16;
+        border: 1px solid #f4ced0;
+        border-radius: 20px;
+        padding: 0 5px;
+        font-size: 12px;
+      }
+      &:hover{
+        color: #ca0c16
+      }
+    }
+   }
+   .content {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: normal;
+    font-size: 14px;
+    color: #6b6b6b;
+    a {
+     font-size: 14px;
+     color: #999;
+     text-decoration: none;
+    }
+   }
+   .info-box {
+    padding-top: 4px;
+    font-size: 14px;
+    color: #6b6b6b;
+    position: relative;
+    display: flex;
+    p {
+     margin-right: 16px;
+     .date-and-readNum {
+      max-width: 62px;
+      text-align: right;
+      cursor: pointer;
+      overflow: hidden;
+      height: 22px;
+      margin-right: 0;
+     }
+    }
+   }
+  }
+ }
+}

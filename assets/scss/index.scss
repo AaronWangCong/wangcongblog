@@ -1,0 +1,164 @@
+.container-index{
+  min-height: 100vh;
+  padding: 40px 10px;
+  background: url('~assets/images/index_bg.jpg') no-repeat;
+  background-size: cover;
+  color: #dedede;
+  // position: relative;
+  // &:after{
+  //   content: "";
+  //   width:100%;
+  //   height:100%;
+  //   position: absolute;
+  //   left:0;
+  //   top:0;
+  //   background: inherit;
+  //   filter: blur(2px);//模糊度
+  // }
+  &>div{
+    width: 100%;
+    z-index: 3;
+  }
+  .title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+    // color: #35495e;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(252, 96, 24);
+  }
+  .index-content{
+    font-size: 14px;
+    padding-bottom: 20px;
+    p{
+      opacity: 0;
+      text-align: center;
+    }
+    .p1{
+      color: rgb(209, 19, 19);
+      animation: animateShow 2s 0s linear forwards;
+    }
+    .p2{
+      animation: animateShow 2s 1s linear forwards;
+    }
+    .p3{
+      animation: animateShow 2s 4s linear forwards;
+    }
+    .p4{
+      animation: animateShow 2s 7s linear forwards;
+    }
+    .p5{
+      animation: animateShow 2s 10s linear forwards;
+    }
+    .p6{
+      animation: animateShow 2s 13s linear forwards;
+    }
+    .p7{
+      animation: animateShow 2s 16s linear forwards;
+    }
+    .p8{
+      animation: animateShow 2s 19s linear forwards;
+    }
+    .p9{
+      animation: animateShow 2s 22s linear forwards;
+    }
+    .p10{
+      animation: animateShow 2s 25s linear forwards;
+    }
+    .p11{
+      animation: animateShow 2s 28s linear forwards;
+    }
+  }
+  .links-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    .links-text{
+      width: 100%;
+      height: 500px;
+      position: relative;
+      opacity: 0;
+      .fly {
+        width: 100%;
+        position: absolute;
+        transform: translateX(100%);
+       }
+       @keyframes go {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform:  translateX(-100%);
+        }
+       }
+    }
+    .links-text-animate{
+      animation: animateShow 2s 5s linear forwards;
+    }
+    .links-messegs{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      .el-input{
+        width: 200px;
+      }
+    }
+    .links-messegs-animate{
+      animation: animateShow 2s 2s linear forwards;
+    }
+    .links-btn{
+      width: 100%;
+      padding-top: 15px;
+      text-align: center;
+      opacity: 1;
+      position: fixed;
+      bottom: 10px;
+    }
+    .links-btn-animate{
+      animation: animateShow 2s 5s linear forwards;
+    }
+  }
+
+  .el-dialog{
+    .el-dialog__headerbtn{
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 20px 15px;
+    .title {
+      font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    background: url('~assets/images/appBG/timg (6).jpg') no-repeat center;
+    .title{
+      margin-bottom: 10px;
+    }
+    .links-box{
+      .links-text{
+        height: 200px;
+      }
+    }
+  }
+
+  @keyframes animateShow {
+    form{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+}
